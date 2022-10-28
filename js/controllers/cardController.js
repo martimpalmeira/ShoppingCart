@@ -68,6 +68,8 @@ export function createCard(prodObj) {
     const pEstoque = document.createElement('p')
     const btnAddToShoppingCart = document.createElement('button')
 
+    pPrice.classList.add('p-price')
+
     div.addEventListener('click', () => {
         handleCardClick(div)
 
@@ -82,9 +84,10 @@ export function createCard(prodObj) {
 
     div.appendChild(imgProd)
     div.appendChild(pTitle)
-    div.appendChild(pPrice)
+    
     div.appendChild(pDescription)
     div.appendChild(pEstoque)
+    div.appendChild(pPrice)
     div.appendChild(btnAddToShoppingCart)
 
 

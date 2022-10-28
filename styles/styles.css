@@ -8,10 +8,13 @@
 header {
   background-color: orange;
   color: white;
-  height: 50px;
+  height: 70px;
   display: flex;
   align-items: center;
   padding: 0 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 nav {
@@ -21,6 +24,7 @@ nav {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
+  
 }
 
 nav a {
@@ -59,13 +63,16 @@ section {
   padding: 50px;
   margin: 0 auto;
   justify-content: center;
+  padding-top: 120px;
 }
+
+
 
 section div {
   background-color: rgb(255, 255, 255);
   width: 250px;
   text-align: center;
-  box-shadow: 3px 3px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 20px 5px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   padding: 10px;
   border: solid 1 px grey;
@@ -112,7 +119,7 @@ section div:hover {
   background-color: white;
   width: 540px;
   position: absolute;
-  top: 40px;
+  top: 51px;
   right: -180px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   display: none;
@@ -278,4 +285,10 @@ a {
 
 .remover-item:hover{
   opacity: 0.7;
+}
+
+.p-price{
+  font-size: 25px;
+  font-weight: 700;
+  
 }
