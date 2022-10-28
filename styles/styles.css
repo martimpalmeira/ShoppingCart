@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: orange;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  opacity: 0.5;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+section div {
+  background-color: rgb(255, 255, 255);
+  width: 250px;
+  text-align: center;
+  box-shadow: 3px 3px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  border: solid 1 px grey;
+}
+
+section div img {
+  background-color: white;
+  width: 100%;
+  height: 250px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.search-input {
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 4px;
+  border: none;
+  background-image: url("../img/icone-pesquisa.png");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 5px);
+  background-size: 24px;
+  background-position-y: center;
+}
+
+.a:hover {
+  opacity: 0.7;
+}
+
+a h1:hover {
+  opacity: 0.7;
+}
+
+section div:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.carrinho {
+  position: relative;
+}
+
+.open-carrinho {
+  height: auto;
+  background-color: white;
+  width: 540px;
+  position: absolute;
+  top: 40px;
+  right: -180px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: none;
+  padding: 20px;
+  z-index: 10;
+  color: black;
+  border-left: solid 1px rgb(208, 208, 208);
+  border-right: solid 1px rgb(208, 208, 208);
+  border-bottom: solid 1px rgb(208, 208, 208);
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.show {
+  display: block;
+}
+
+section div p:first-of-type {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.number-itens {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  position: absolute;
+  right: -10px;
+  top: -5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: orange;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+section div button {
+  background-color: orange;
+  border: none;
+  height: 35px;
+  margin: 10px 0;
+  padding: 0 20px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+section div button:hover {
+  opacity: 0.7;
+}
+
+a {
+  cursor: pointer;
+}
+
+.carrinho-title {
+  display: flex;
+  gap: 1px;
+}
+
+.carrinho-title:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.card p{
+  margin-top: 5px;
+}
+
+.itens-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-container {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cccccc;
+  gap: 30px;
+}
+
+.produtos-adicionados-title {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.itemLeftContainer img {
+  width: 80px;
+}
+
+.itemLeftContainerText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.itemLeftContainerText p{
+  margin-top: 5px;
+}
+
+.itemLeftContainerText p:first-of-type {
+  font-weight: 700;
+}
+
+.produtos-adicionados-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.quantidade {
+  height: 20px;
+  width: 25px;
+  border: 1px solid rgb(173, 169, 169);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(105, 105, 105);
+  font-size: 14px;
+}
+
+.total-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-container p {
+  font-size: 18px;
+  font-weight: 400;
+  font-weight: 700;
+}
+
+.valor-total {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.quantidade-container{
+  gap: 13px;
+}
+
+.diminuir-quantidade, .aumentar-quantidade{
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(147, 147, 147);
+}
+
+.diminuir-quantidade:hover, .aumentar-quantidade:hover{
+  color: orange;
+}
+
+.remover-item{
+  color: rgb(203, 23, 23);
+  font-size: 14px;
+  cursor: pointer;
+  
+}
+
+.remover-item:hover{
+  opacity: 0.7;
+}
