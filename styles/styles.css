@@ -13,23 +13,21 @@ header {
   align-items: center;
   padding: 0 30px;
   width: 100%;
-  
- 
 }
 
-section{
+section {
   position: relative;
   z-index: -4;
   height: 100%;
 }
 
-main{
+main {
   position: relative;
   z-index: -5;
   min-height: calc(100vh - 70px - 170px);
 }
 
-body{
+body {
   position: relative;
   z-index: -5;
   min-height: 100vh;
@@ -42,7 +40,6 @@ nav {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  
 }
 
 nav a {
@@ -81,7 +78,6 @@ section {
   padding: 50px;
   margin: 0 auto;
   justify-content: center;
-
 }
 
 section div {
@@ -250,7 +246,7 @@ a {
   margin-bottom: 20px;
 }
 
-.desktop-menu{
+.desktop-menu {
   display: flex;
 }
 
@@ -313,8 +309,6 @@ a {
   font-weight: 700;
 }
 
-
-
 .mobile-icon-hamburguer {
   display: none;
   position: relative;
@@ -341,82 +335,79 @@ a {
 
 .middle-line {
   top: calc(50% - 2px);
-  
 }
 
 .bottom-line {
   bottom: 0;
 }
 
-.middle-line-x{
+.middle-line-x {
   animation: middle-line-rotate 1s forwards;
-  
 }
 
-.bottom-line-x{
-animation: bottom-line-rotate 1s forwards;
+.bottom-line-x {
+  animation: bottom-line-rotate 1s forwards;
 }
 
-.top-line-x{
+.top-line-x {
   animation: top-line-rotate 1s forwards alternate;
 }
 
-.middle-line-x-reverse{
+.middle-line-x-reverse {
   animation: middle-line-rotate 1s forwards reverse;
-  
 }
 
-.bottom-line-x-reverse{
-animation: bottom-line-rotate 1s forwards reverse;
+.bottom-line-x-reverse {
+  animation: bottom-line-rotate 1s forwards reverse;
 }
 
-.top-line-x-reverse{
+.top-line-x-reverse {
   animation: top-line-rotate 1s forwards reverse;
 }
 
 @keyframes top-line-rotate {
-  0%{
-   transform: translateY(0px);
+  0% {
+    transform: translateY(0px);
   }
 
-  50%{
+  50% {
     transform: translateY(13px);
   }
 
-  100%{
+  100% {
     transform: translateY(13px) rotate(135deg);
   }
 }
 
 @keyframes middle-line-rotate {
-  0%{
-   transform: translateY(0px);
-  }
-
-  50%{
+  0% {
     transform: translateY(0px);
   }
 
-  100%{
+  50% {
+    transform: translateY(0px);
+  }
+
+  100% {
     transform: translateY(0px) rotate(135deg);
   }
 }
 
 @keyframes bottom-line-rotate {
-  0%{
-   transform: translateY(0px);
+  0% {
+    transform: translateY(0px);
   }
 
-  50%{
+  50% {
     transform: translateY(-13px);
   }
 
-  100%{
+  100% {
     transform: translateY(-13px) rotate(225deg);
   }
 }
 
-footer{
+footer {
   background-color: orange;
   color: white;
   height: 170px;
@@ -429,13 +420,13 @@ footer{
   bottom: 0;
 }
 
-footer .social-media-container{
+footer .social-media-container {
   display: flex;
   gap: 10px;
   margin-top: 15px;
 }
 
-footer .social-media-container .social-media-item{
+footer .social-media-container .social-media-item {
   height: 35px;
   width: 35px;
   background-color: white;
@@ -445,19 +436,18 @@ footer .social-media-container .social-media-item{
   align-items: center;
 }
 
-.social-media-item:hover{
+.social-media-item:hover {
   opacity: 0.8;
 }
 
-footer .social-media-item img{
+footer .social-media-item img {
   width: 25px;
 }
 
-.heart-icon{
+.heart-icon {
   width: 20px;
   vertical-align: middle;
 }
-
 
 @media screen and (max-width: 940px) {
   .mobile-icon-hamburguer {
@@ -479,31 +469,31 @@ footer .social-media-item img{
   }
 
   @keyframes translate-down-menu {
-    0%{
+    0% {
       transform: translateY(0px);
-     }
-   
-     50%{
-       transform: translateY(0px);
-     }
-   
-     100%{
-       transform: translateY(273px);
-     }
+    }
+
+    50% {
+      transform: translateY(0px);
+    }
+
+    100% {
+      transform: translateY(273px);
+    }
   }
 
   @keyframes translate-up-menu {
-    0%{
-      transform: translateY(273px);
-     }
-   
-     75%{
+    0% {
       transform: translateY(273px);
     }
-   
-     100%{
-       transform: translateY(0px);
-     }
+
+    75% {
+      transform: translateY(273px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
   }
 
   .desktop-menu ul {
@@ -520,7 +510,7 @@ footer .social-media-item img{
   }
 
   .hide {
-    animation: translate-up-menu 1s forwards ;
+    animation: translate-up-menu 1s forwards;
   }
 
   .open-carrinho {
@@ -532,7 +522,6 @@ footer .social-media-item img{
   .open-carrinho {
     width: 320px;
     right: -100px;
-
   }
   .item-container {
     flex-direction: column;

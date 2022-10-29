@@ -8,69 +8,78 @@ const openCarrinho = document.querySelector('.open-carrinho');
 export function init() {
     menuIcon.addEventListener('click', handleMenuIconClick);
 
-    
 
-    window.addEventListener("resize", function(event) {
+
+    window.addEventListener("resize", function (event) {
         topLine.classList.remove('top-line-x-reverse')
         middleLine.classList.remove('middle-line-x-reverse')
         bottomLine.classList.remove('bottom-line-x-reverse')
         menuContainer.classList.remove('hide')
-        if(this.window.innerWidth <= 940){
-            openCarrinho.classList.remove('show')
+        if (openCarrinho.classList.contains('show')) {
+            menuContainer.classList.add('show-menu')
+            topLine.classList.add('top-line-x')
+            middleLine.classList.add('middle-line-x')
+            bottomLine.classList.add('bottom-line-x')
         }
-        
-        //console.log(window.innerWidth)
+
+
+
+
     })
 }
 
 function handleMenuIconClick() {
-    
+
     //menuContainer.classList.toggle('show');
-    
-    if(!menuContainer.classList.contains('show-menu')){
+
+
+
+    if (!menuContainer.classList.contains('show-menu')) {
         menuContainer.classList.remove('hide')
-        void menuContainer.offsetWidth; 
+        void menuContainer.offsetWidth;
         menuContainer.classList.add('show-menu')
-    }else{
+    } else {
         menuContainer.classList.remove('show-menu')
-        void menuContainer.offsetWidth; 
+        void menuContainer.offsetWidth;
         menuContainer.classList.add('hide')
     }
 
-    if(!topLine.classList.contains('top-line-x')){
+    if (!topLine.classList.contains('top-line-x')) {
         topLine.classList.remove('top-line-x-reverse')
-        void topLine.offsetWidth; 
+        void topLine.offsetWidth;
         topLine.classList.add('top-line-x')
-    }else{
+    } else {
         topLine.classList.remove('top-line-x')
-        void topLine.offsetWidth; 
+        void topLine.offsetWidth;
         topLine.classList.add('top-line-x-reverse')
     }
 
-    if(!middleLine.classList.contains('middle-line-x')){
+    if (!middleLine.classList.contains('middle-line-x')) {
         middleLine.classList.remove('middle-line-x-reverse')
-        void middleLine.offsetWidth; 
+        void middleLine.offsetWidth;
         middleLine.classList.add('middle-line-x')
-    }else{
+    } else {
         middleLine.classList.remove('middle-line-x')
-        void middleLine.offsetWidth; 
+        void middleLine.offsetWidth;
         middleLine.classList.add('middle-line-x-reverse')
     }
 
-    if(!bottomLine.classList.contains('bottom-line-x')){
+    if (!bottomLine.classList.contains('bottom-line-x')) {
         bottomLine.classList.remove('bottom-line-x-reverse')
-        void bottomLine.offsetWidth; 
+        void bottomLine.offsetWidth;
         bottomLine.classList.add('bottom-line-x')
-    }else{
+    } else {
         bottomLine.classList.remove('bottom-line-x')
-        void bottomLine.offsetWidth; 
+        void bottomLine.offsetWidth;
         bottomLine.classList.add('bottom-line-x-reverse')
     }
-    
-    
-   
-    
-       
-    
-    
+
+
+    if (openCarrinho.classList.contains('show') && !menuContainer.classList.contains('show-menu')) {
+        openCarrinho.classList.remove('show')
+    }
+
+
+
+
 }
