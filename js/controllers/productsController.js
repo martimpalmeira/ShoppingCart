@@ -6,9 +6,9 @@ const limitOfProductsToShow = 12;
 let countProducts = 1;
 
 export function init() {
-    Storage.saveProducts();
+    Storage.saveProducts();    
     showCards();
-   
+
 }
 
 export function showCards() {

@@ -72,6 +72,13 @@ export function getAllProductsObj() {
         return JSON.parse(prod)
     })
 
+    //Evit pag load without products
+    if(listProductObj.length == 0){
+        location.reload()
+    }
+
+    
+
     return listProductObj;
 }
 

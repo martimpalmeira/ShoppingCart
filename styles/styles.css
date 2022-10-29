@@ -13,8 +13,26 @@ header {
   align-items: center;
   padding: 0 30px;
   width: 100%;
-  z-index: 10;
   
+ 
+}
+
+section{
+  position: relative;
+  z-index: -4;
+  height: 100%;
+}
+
+main{
+  position: relative;
+  z-index: -5;
+  min-height: calc(100vh - 70px - 170px);
+}
+
+body{
+  position: relative;
+  z-index: -5;
+  min-height: 100vh;
 }
 
 nav {
@@ -24,6 +42,7 @@ nav {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
+  
 }
 
 nav a {
@@ -317,14 +336,84 @@ a {
   background-color: white;
   position: absolute;
   border-radius: 4px;
+  transition: 0.5s;
 }
 
 .middle-line {
   top: calc(50% - 2px);
+  
 }
 
 .bottom-line {
   bottom: 0;
+}
+
+.middle-line-x{
+  animation: middle-line-rotate 1s forwards;
+  
+}
+
+.bottom-line-x{
+animation: bottom-line-rotate 1s forwards;
+}
+
+.top-line-x{
+  animation: top-line-rotate 1s forwards alternate;
+}
+
+.middle-line-x-reverse{
+  animation: middle-line-rotate 1s forwards reverse;
+  
+}
+
+.bottom-line-x-reverse{
+animation: bottom-line-rotate 1s forwards reverse;
+}
+
+.top-line-x-reverse{
+  animation: top-line-rotate 1s forwards reverse;
+}
+
+@keyframes top-line-rotate {
+  0%{
+   transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(13px);
+  }
+
+  100%{
+    transform: translateY(13px) rotate(135deg);
+  }
+}
+
+@keyframes middle-line-rotate {
+  0%{
+   transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(0px);
+  }
+
+  100%{
+    transform: translateY(0px) rotate(135deg);
+  }
+}
+
+@keyframes bottom-line-rotate {
+  0%{
+   transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-13px);
+  }
+
+  100%{
+    transform: translateY(-13px) rotate(225deg);
+  }
 }
 
 footer{
@@ -336,6 +425,8 @@ footer{
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  position: relative;
+  bottom: 0;
 }
 
 footer .social-media-container{
@@ -367,6 +458,7 @@ footer .social-media-item img{
   vertical-align: middle;
 }
 
+
 @media screen and (max-width: 940px) {
   .mobile-icon-hamburguer {
     display: block;
@@ -381,19 +473,54 @@ footer .social-media-item img{
     left: 0;
     padding-top: 30px;
     padding-bottom: 30px;
-    display: none;
+    top: -203px;
+    z-index: -1;
+    transition: 1s;
+  }
+
+  @keyframes translate-down-menu {
+    0%{
+      transform: translateY(0px);
+     }
+   
+     50%{
+       transform: translateY(0px);
+     }
+   
+     100%{
+       transform: translateY(273px);
+     }
+  }
+
+  @keyframes translate-up-menu {
+    0%{
+      transform: translateY(273px);
+     }
+   
+     75%{
+      transform: translateY(273px);
+    }
+   
+     100%{
+       transform: translateY(0px);
+     }
   }
 
   .desktop-menu ul {
     flex-direction: column;
+    text-align: center;
   }
 
   .mobile-menu {
     display: block;
   }
 
-  .show {
-    display: flex;
+  .show-menu {
+    animation: translate-down-menu 1s forwards;
+  }
+
+  .hide {
+    animation: translate-up-menu 1s forwards ;
   }
 
   .open-carrinho {
