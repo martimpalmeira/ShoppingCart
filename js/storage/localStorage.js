@@ -110,6 +110,8 @@ export function decreaseProductQuantInCarrinho(product) {
 export function removeProductInCarrinho(product) {
     carrinho.listOfProducts.forEach(prods => {
         if (prods.name == product.name) {
+            prods.quantidadeNoCarrinho = 1;
+            //aqui
             const index = listOfProducts.indexOf(prods);
             listOfProducts.splice(index,1);
         }

@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avaliação Front End</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="./img/icone-carrinho.png">
 </head>
 
 <body>
-    <header>  
+    <header>
         <nav>
             <a class="link-home" href="#">
                 <h1>ShoppingCart</h1>
@@ -31,7 +32,9 @@
                     <div class="open-carrinho">
                         <p class="produtos-adicionados-title">PRODUTOS ADICIONADOS</p>
                         <div class="itens-container"></div>
-                        <div class="total-container"><p class="total">Total </p><span class="valor-total"></span></div>
+                        <div class="total-container">
+                            <p class="total">Total </p><span class="valor-total"></span>
+                        </div>
                     </div>
                 </div>
                 <input class="search-input" type="text" placeholder="Buscar produto">
@@ -43,14 +46,26 @@
             </span>
 
         </nav>
-        
+
     </header>
 
     <main>
         <section>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="social-media-container">
+            <a class="social-media-item" target="_blank" href="https://github.com/martimpalmeira"><img
+                    src="./img/icon-github.png" alt=""></a>
+            <a class="social-media-item" target="_blank" href="https://www.linkedin.com/in/martimpalmeira/"><img
+                    src="./img/icon-linkedin.png" alt=""></a>
+            <a class="social-media-item" target="_blank"
+                href="https://api.whatsapp.com/send/?phone=5575981290360&text&app_absent=0"><img
+                    src="./img/icon-whatsapp.png" alt=""></a>
+        </div>
+        <p>Made with <img class="heart-icon" src="./img/icon-heart.png" alt=""> by Martim Palmeira</p>
+        <p>© 2022 All rights reserved</p>
+    </footer>
     <script type="module" src="./js/script.js"></script>
 </body>
 
