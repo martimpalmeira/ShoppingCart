@@ -24,7 +24,6 @@ nav {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  
 }
 
 nav a {
@@ -65,8 +64,6 @@ section {
   justify-content: center;
   padding-top: 120px;
 }
-
-
 
 section div {
   background-color: rgb(255, 255, 255);
@@ -120,7 +117,7 @@ section div:hover {
   width: 540px;
   position: absolute;
   top: 51px;
-  right: -180px;
+  right: -207px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   display: none;
   padding: 20px;
@@ -189,7 +186,7 @@ a {
   cursor: pointer;
 }
 
-.card p{
+.card p {
   margin-top: 5px;
 }
 
@@ -220,7 +217,7 @@ a {
   gap: 5px;
 }
 
-.itemLeftContainerText p{
+.itemLeftContainerText p {
   margin-top: 5px;
 }
 
@@ -232,6 +229,10 @@ a {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 20px;
+}
+
+.desktop-menu{
+  display: flex;
 }
 
 .quantidade {
@@ -262,33 +263,111 @@ a {
   font-weight: 700;
 }
 
-.quantidade-container{
+.quantidade-container {
   gap: 13px;
 }
 
-.diminuir-quantidade, .aumentar-quantidade{
+.diminuir-quantidade,
+.aumentar-quantidade {
   font-size: 20px;
   cursor: pointer;
   color: rgb(147, 147, 147);
 }
 
-.diminuir-quantidade:hover, .aumentar-quantidade:hover{
+.diminuir-quantidade:hover,
+.aumentar-quantidade:hover {
   color: orange;
 }
 
-.remover-item{
+.remover-item {
   color: rgb(203, 23, 23);
   font-size: 14px;
   cursor: pointer;
-  
 }
 
-.remover-item:hover{
+.remover-item:hover {
   opacity: 0.7;
 }
 
-.p-price{
-  font-size: 25px;
+.p-price {
+  font-size: 20px;
   font-weight: 700;
-  
+}
+
+
+
+.mobile-icon-hamburguer {
+  display: none;
+  position: relative;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.mobile-icon-hamburguer:hover {
+  opacity: 0.7;
+}
+
+.mobile-icon-hamburguer .middle-line,
+.top-line,
+.bottom-line {
+  height: 4px;
+  width: 30px;
+  background-color: white;
+  position: absolute;
+  border-radius: 4px;
+}
+
+.middle-line {
+  top: calc(50% - 2px);
+}
+
+.bottom-line {
+  bottom: 0;
+}
+
+@media screen and (max-width: 940px) {
+  .mobile-icon-hamburguer {
+    display: block;
+  }
+
+  .desktop-menu {
+    flex-direction: column;
+    position: absolute;
+    bottom: -270px;
+    background-color: orange;
+    width: 100%;
+    left: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: none;
+  }
+
+  .desktop-menu ul {
+    flex-direction: column;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .open-carrinho {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .open-carrinho {
+    width: 320px;
+    right: -100px;
+
+  }
+  .item-container {
+    flex-direction: column;
+  }
 }

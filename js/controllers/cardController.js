@@ -77,7 +77,7 @@ export function createCard(prodObj) {
 
     imgProd.src = prodObj.linkImg
     pTitle.innerText = prodObj.name
-    pPrice.innerText = "R$" + prodObj.price + ".00"
+    pPrice.innerText = "R$ " + prodObj.price + ".00"
     pDescription.innerText = prodObj.description
     pEstoque.innerText = "Quantidade estoque: " + prodObj.estoque
     btnAddToShoppingCart.innerText = "Adicionar ao carrinho"
