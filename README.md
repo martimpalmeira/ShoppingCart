@@ -18,8 +18,9 @@
 </p>
 
 <p align="center">
-<img width="75%" align="left" src="./img/gravacao-desktop.gif">
-<img width="25%" src="./img/gravacao-mobile.gif">
+<img width="73%" height="500px" align="left" src="./img/gravacao-desktop.gif">
+
+<img width="25%" height="500px"  src="./img/gravacao-mobile.gif">
 </p>
 
 # 📌 Topics
@@ -78,4 +79,4 @@ The following tools were used in building the project:
 
 This project is under license. See the <a href="https://github.com/martimpalmeira/Disney-Plus/blob/main/LICENCE">MIT LICENSE</a> file for more details.
 
-<a href="#-i-s-n-e-y-">Back to top</a>
+<a href="#shoppingcart">Back to top</a>
