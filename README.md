@@ -3,17 +3,17 @@
 
 <p align="center">
 
-<img alt="Netlify" src="https://img.shields.io/netlify/e42a60b3-c8b0-4158-b6eb-ea473d3046b8?color=00C7B7&logo=Netlify&style=for-the-badge">
+<img alt="Netlify" src="https://img.shields.io/netlify/dcd14528-3d38-440e-9069-73ae0137596e?color=ffa500&logo=netlify&logoColor=ffa500&style=for-the-badge">
 
-<a  href="https://github.com/martimpalmeira/Disney-Plus/blob/main/LICENCE">
-<img alt="GitHub" src="https://img.shields.io/github/license/martimpalmeira/Disney-Plus?color=61ca2f&style=for-the-badge">
+<a  href="https://github.com/martimpalmeira/ShoppingCart/blob/main/LICENse">
+<img alt="GitHub" src="https://img.shields.io/github/license/martimpalmeira/ShoppingCart?color=ffa500&logoColor=green&style=for-the-badge">
 </a>
 
-<a href="https://github.com/martimpalmeira/Disney-Plus/issues">
-<img alt="GitHub issues" src="https://img.shields.io/github/issues/martimpalmeira/Disney-Plus?style=for-the-badge">
+<a href="https://github.com/martimpalmeira/ShoppingCart/issues">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/martimpalmeira/ShoppingCart?color=ffa500&style=for-the-badge">
 </a>
 
-<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/martimpalmeira/Disney-Plus?style=for-the-badge">
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/martimpalmeira/ShoppingCart?color=ffa500&style=for-the-badge">
 
 </p>
 
